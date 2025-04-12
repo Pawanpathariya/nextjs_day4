@@ -58,7 +58,7 @@ const [product, setProduct] = useState([]);
                       <td className="px-4 py-2">{data2.Proname}</td>
                       <td className="px-4 py-2">{data2.Probrand}</td>
                       <td className="px-4 py-2">{data2.Proprice}</td>
-                      <td onClick={() => router.push(`/dashboard/product?id=${data2._id}`)}>
+                      <td onClick={() => router.push(`/dashboard/product/${data2._id}`)}>
                         {data2.imageurl && (
                           <img src={data2.imageurl} alt="home" width={100} height={30} />
                         )}
